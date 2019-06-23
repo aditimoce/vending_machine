@@ -9,12 +9,12 @@ public interface IVendingMachine {
 
 	public Product dispenceProduct(int shelfCode);
 
-	public boolean payProductPrice(int shelfCode, double amountPaid);
+	public boolean payProductPrice(int shelfCode, Queue<Money> amountPaid);
 
 	public Queue<Money> computeChange(double amountReceived, double amountExpected);
 
 	public boolean validateAmountReceived(Queue<Money> moneyReceived);
-	
+
 	public boolean checkProductAvailability();
 
 }
