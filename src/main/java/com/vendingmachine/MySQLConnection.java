@@ -103,7 +103,7 @@ public class MySQLConnection {
 				double price = rs.getDouble("Price");
 				int id = rs.getInt("ID");
 
-				// Simply Print the results
+				// Print the results
 				System.out.print("ID: " + id + " ");
 				System.out.print("Produs: " + name + " ");
 				System.out.print("Pret: " + price);
